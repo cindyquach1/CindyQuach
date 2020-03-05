@@ -1,0 +1,212 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section {
+  height: 100vh;
+  max-width: initial;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1000px;
+    
+ }
+
+#main_page {
+  height: 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content_about_me {
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+#personal_page {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: url(75%-transparent-white.png);
+  background: rgba(250, 250, 210, 0.75);
+}
+
+#personal_projects {
+  padding: 75px;
+  height: 100vh;
+  margin-right: 15%;
+  margin-left: 15%;
+  color: black;
+}
+
+#skills_page {
+  width: 100%;
+  display: flex;
+  background: url(75%-transparent-white.png);
+  background-color: inherit;
+}
+  
+#skills_content {
+  padding: 75px;
+  width: 100%;
+  height: 100% auto;
+  margin-right: 15%;
+  margin-left: 15%;
+  color: black;
+}
+
+#relevant_courses {
+  width: 100%;
+  height: 100% auto;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.Profile_Pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  line-height: 1.5;
+}
+
+td {
+  line-height: 1.5;
+}
+
+#panel, #flip, #panel2, #flip2, #panel3, #flip3, #flip4, #panel4, #flip5, #panel5 {
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+
+}
+
+#panel, #panel2, #panel3, #panel4, #panel5 {
+  padding: 30px;
+  display: none;
+}
+
+a.social,a.social:visited { color: #fff; }
+a.social:hover { color: #fff; }
+
+.social {
+	float: center;
+	margin: 1em 1em; width: 50px; height: 35px; 	
+  display: block; text-align: center; line-height: 7px; color: #fff;
+  position: relative;
+	transform:rotateY(0deg);
+	transition:transform .25s ease-out;
+	transform-style:preserve-3d;
+}
+
+.social > div {
+	width: 50px; background: rgb(24, 24, 24);;
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 5%;
+}
+
+.social >.front {
+  transform:translateZ(19px);
+}
+
+.social >.back {
+	background: #3B5998; font-size: 2em;
+	transform:rotateY(-100deg) translateZ(19px);
+}
+  
+.social.social-github > .back { background: #f3f3f3; color: rgb(24, 24, 24); }
+.social.social-linkedin > .back { background: #4875B4; }
+.social.social-mail > .back {background: #f3f3f3; color: rgb(24, 24, 24); }
+
+/* Hover */
+.social:hover {
+	transform: rotateY(100deg);
+}
+
+nav {
+  width: 300px;
+  background: white;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-clip-path: circle(24px at 30px 24px);
+  clip-path: circle(24px at 32px 24px);
+  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+}
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  -webkit-clip-path: circle(390px at 225px 24px);
+  clip-path: circle(390px at 150px 24px);
+}
+
+a.navbar {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a.navbar:hover {
+  background: #ffe082;
+}
+
+a.navbar:active {
+  background: #ffca28;
+}
+
+.navicon {
+  padding: 23px 20px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+          transform-origin: 32px 24px;
+}
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+}
+.navicon div:before, .navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+  position: absolute;
+}
+.navicon div:before {
+  top: -7px;
+}
+.navicon div:after {
+  top: 7px;
+}
