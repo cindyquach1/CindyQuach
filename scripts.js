@@ -83,8 +83,5 @@ function setup() {
         $("#flip5").css("background-color", "white");
     });
   });
-
-
-
 }
 
